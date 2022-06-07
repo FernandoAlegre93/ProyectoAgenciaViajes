@@ -1,0 +1,32 @@
+extends ./layout/index 
+
+block slider 
+    .slider 
+        h1 Rio de Janerio 
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu tincidunt leo, in fermentum diam. Donec sit amet risus et ligula rhoncus finibus. Morbi vel porttitor ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos nunc id, laoreet ante. Praesent a neque non tortor sodales faucibus ac suscipit metus.
+                p Phasellus egestas convallis ipsum, cursus luctus urna vehicula ullamcorper. Cras pharetra eros eget justo porta dignissim. Ut ullamcorper dui eget iaculis luctus. Morbi dapibus in quam at porttitor. Proin convallis magna ante. Vestibulum rutrum efficitur 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt= "imagen nosotros", class="img-fluid" )
+        include ./layout/bloque_viajes   
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha  20 de Junio de 2022 - 28 de Junio de 2022
+                        p.precio $1000 USD 
+    .container  
+        h2.mt-5.text-center Reseñas    
+        include ./layout/bloque_testimoniales
+
+        
